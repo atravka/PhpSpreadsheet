@@ -502,7 +502,7 @@ class Chart
     {
         $plotAttributes = [];
         if (isset($chartDetail->dLbls)) {
-            if (isset($chartDetail->dLbls->howLegendKey)) {
+            if (isset($chartDetail->dLbls->showLegendKey)) {
                 $plotAttributes['showLegendKey'] = self::getAttribute($chartDetail->dLbls->showLegendKey, 'val', 'string');
             }
             if (isset($chartDetail->dLbls->showVal)) {
